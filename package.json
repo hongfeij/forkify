@@ -6,10 +6,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hongfeij/forkify.git"
-  },
   "author": "Hongfei Ji",
   "license": "ISC",
   "bugs": {
