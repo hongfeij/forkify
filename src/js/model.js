@@ -1,4 +1,3 @@
-import { async } from 'regenerator-runtime';
 import { RES_PER_PAGE, API_URL, KEY } from './config.js';
 import { AJAX } from './helpers.js';
 
@@ -114,9 +113,9 @@ const init = function () {
 };
 init();
 
-// const clearBookmarks = function () {
-//   localStorage.clear('bookmarks');
-// };
+const clearBookmarks = function () {
+  localStorage.clear('bookmarks');
+};
 
 export const uploadRecipe = async function (newRecipe) {
   try {

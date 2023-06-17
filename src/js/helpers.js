@@ -1,4 +1,3 @@
-import { async } from 'regenerator-runtime';
 import { TIMEOUT_SEC } from './config.js';
 
 export const AJAX = async function (url, uploadData = undefined) {
