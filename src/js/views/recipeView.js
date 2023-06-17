@@ -53,7 +53,7 @@ class RecipeView extends View {
       </div>
       <div class="recipe__info">
         <svg class="recipe__info-icon">
-          <use href="${icons}.svg#icon-users"></use>
+          <use href="${icons}#icon-users"></use>
         </svg>
         <span class="recipe__info-data recipe__info-data--people">${
           this._data.servings
@@ -78,9 +78,12 @@ class RecipeView extends View {
         </div>
       </div>
 
-      <div class="recipe__user-generated">
-
+      <div class="recipe__user-generated ${this._data.key ? '' : 'hidden'}">
+        <svg>
+          <use href="${icons}#icon-user"></use>
+        </svg>
       </div>
+
       <button class="btn--round btn--bookmark">
         <svg class="">
           <use href="${icons}#icon-bookmark${

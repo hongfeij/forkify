@@ -49,6 +49,7 @@ export default class View {
   }
 
   renderSpinner() {
+    const prevHTML = this._parentElement.innerHTML;
     const markUp = `
         <div class="spinner">
           <svg>
@@ -58,6 +59,7 @@ export default class View {
       `;
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markUp);
+    return prevHTML;
   }
 
   renderError(message = this._errorMessage) {
