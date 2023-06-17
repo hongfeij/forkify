@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hongfeij/forkify#readme",
   "dependencies": {
     "core-js": "^3.31.0",
+    "fraction.js": "^4.2.0",
     "fractional": "^1.0.0",
     "parcel": "^2.9.2",
     "regenerator-runtime": "^0.13.11"
