@@ -1,7 +1,7 @@
-import view from './view.js';
+import View from './View.js';
 import icons from 'url:../../img/icons.svg';
 
-class paginationView extends view {
+class PaginationView extends View {
   _parentElement = document.querySelector('.pagination');
 
   addHandlerClick(handler) {
@@ -18,7 +18,6 @@ class paginationView extends view {
     const numPages = Math.ceil(
       this._data.results.length / this._data.resultsPerPage
     );
-    console.log(numPages);
 
     // Page 1, and there are other pages
     if (currPage === 1 && numPages > 1) {
@@ -75,4 +74,4 @@ class paginationView extends view {
   }
 }
 
-export default new paginationView();
+export default new PaginationView();
