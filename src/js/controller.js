@@ -1,12 +1,12 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import * as model from './model.js';
-import recipeView from './views/RecipeView.js';
-import searchView from './views/SearchView.js';
-import resultsView from './views/ResultsView.js';
-import paginationView from './views/PaginationView.js';
-import bookmarksView from './views/BookmarksView.js';
-import addRecipeView from './views/AddRecipeView.js';
+import recipeView from './views/recipeView.js';
+import searchView from './views/searchView.js';
+import resultsView from './views/resultsView.js';
+import paginationView from './views/paginationView.js';
+import bookmarksView from './views/bookmarksView.js';
+import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
 
 // parcel: hot module reloading
